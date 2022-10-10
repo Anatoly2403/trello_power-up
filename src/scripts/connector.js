@@ -6,9 +6,10 @@ window.TrelloPowerUp.initialize({
       callback: function (t) {
         return t.popup({
           title: "Estimation",
-          url: '../components/estimate.html'
+          url: '',
+          
         });
       }
     }];
   }
-});
+});  
