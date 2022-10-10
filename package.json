@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "nodemon ./src/app.js",
-    "build": "parcel build ./src/index.html ./src/components/*/*.html"
+    "build": "parcel build ./src/index.html ./src/components/*/*.html ./src/assets/icons/*.svg"
   },
   "devDependencies": {
     "nodemon": "2.0.20",
