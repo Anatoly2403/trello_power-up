@@ -1,12 +1,12 @@
 window.TrelloPowerUp.initialize({
   'card-buttons': function () {
     return [{
-      icon: '../assets/icons/timer.svg',
+      icon: './assets/icons/timer.svg',
       text: 'timer',
       callback: function (t) {
         return t.popup({
           title: "timer",
-          url: '../components/timer/timer.html',
+          url: './components/timer/timer.html',
         });
       }
     }];
