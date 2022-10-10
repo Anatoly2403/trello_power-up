@@ -20,14 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
     return (num < 10) ? `0${num}` : `${num}`
   }
 
-  start.addEventListener('click', () => {
-    console.log(timerId);
+  start.addEventListener('click', () => {    
     startTimer();
   });
 
   function startTimer() {
     if (timerId) {
       clearInterval(timerId);
+      timerId = null;
     } else {
       timerId = setInterval(() => {
         sec++;
