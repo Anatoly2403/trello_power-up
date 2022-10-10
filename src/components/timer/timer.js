@@ -21,33 +21,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   start.addEventListener('click', () => {
-    if (timerId) {
-      start.textContent = 'start';
-      stopTimer();
-    } else {
-      start.textContent = 'stop';
-      startTimer();
-    }
+    console.log(timerId);
+    startTimer();
   });
 
   function startTimer() {
-    timerId = setInterval(() => {
-      sec++;
+    if (timerId) {
+      clearInterval(timerId);
+    } else {
+      timerId = setInterval(() => {
+        sec++;
 
-      if (sec === 60) {
-        sec = 0;
-        min++;
-      }
+        if (sec === 60) {
+          sec = 0;
+          min++;
+        }
 
-      if (min === 60) {
-        min = 0;
-        hour++;
-      }
-      updateCounter(hour, min, sec);
-    }, 1000);
-  }
+        if (min === 60) {
+          min = 0;
+          hour++;
+        }
+        updateCounter(hour, min, sec);
+      }, 1000);
+    }
 
-  function stopTimer() {
-    clearInterval(timerId)
   }
 })
