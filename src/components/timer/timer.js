@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const counter = document.querySelector('.timer__counter');
 
   const timerId = null;
-  let hour = min = sec = 0;
+  let hour = 0;
+  let min = 0;
+  let sec = 0;
 
 
   function updateCounter(h, m, s) {
