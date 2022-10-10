@@ -15,9 +15,8 @@ window.TrelloPowerUp.initialize({
       .then(function (estimate) {
         console.log(estimate)
         return [{
-          icon: estimate ? GREY_ROCKET_ICON : WHITE_ROCKET_ICON,
-          text: estimate || 'No Estimate!',
-          color: estimate ? null : 'red',
+          text: 'No Estimate!',
+          color: 'red',
         }];
       });
   },
