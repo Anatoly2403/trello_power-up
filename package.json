@@ -14,9 +14,6 @@
   },
   "devDependencies": {
     "nodemon": "2.0.20",
-    "parcel": "^2.7.0"
-  },
-  "engines": {
-    "node": "16.17.0"
+    "parcel": "2.7.0"
   }
 }
