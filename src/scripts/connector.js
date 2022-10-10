@@ -6,7 +6,7 @@ window.TrelloPowerUp.initialize({
       callback: function (t) {
         return t.popup({
           title: "Estimation",
-          url: '',
+          url: '../components/estimate.html',
           
         });
       }
