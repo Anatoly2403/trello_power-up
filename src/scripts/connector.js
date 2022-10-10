@@ -1,6 +1,3 @@
-
-console.log(123123);
-
 window.TrelloPowerUp.initialize({
   'card-buttons': function (t, options) {
     return [{
