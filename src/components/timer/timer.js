@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const start = document.querySelector('.timer__button');
   const counter = document.querySelector('.timer__counter');
 
-  const timerId = null;
+  let timerId = null;
   let hour = 0;
   let min = 0;
   let sec = 0;
