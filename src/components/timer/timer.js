@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         min = 0;
         hour++;
       }
-
+      updateCounter(hour, min, sec);
     }, 1000);
   }
 
