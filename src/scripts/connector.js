@@ -1,7 +1,7 @@
 window.TrelloPowerUp.initialize({
-  'card-buttons': function (t, options) {
+  'card-buttons': function () {
     return [{
-      text: 'Timer',
+      text: 'timer',
       callback: function (t) {
         return t.popup({
           title: "Timer",
@@ -10,14 +10,11 @@ window.TrelloPowerUp.initialize({
       }
     }];
   },
-  'card-badges': function (t, estimate) {
-    return t.get('card', 'shared', 'estimate')
-      .then(function (estimate) {
-        console.log(estimate)
-        return [{
-          text: 'No Estimate!',
-          color: 'red',
-        }];
-      });
+  'card-badges': function (t, opts) {
+    console.log(t)
+    return [{
+      text: 'No Estimate!',
+      color: 'blue',
+    }];
   },
 });  
