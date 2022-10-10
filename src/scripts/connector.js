@@ -9,5 +9,16 @@ window.TrelloPowerUp.initialize({
         });
       }
     }];
-  }
+  },
+  'card-badges': function (t, estimate) {
+    return t.get('card', 'shared', 'estimate')
+      .then(function (estimate) {
+        console.log(estimate)
+        return [{
+          icon: estimate ? GREY_ROCKET_ICON : WHITE_ROCKET_ICON,
+          text: estimate || 'No Estimate!',
+          color: estimate ? null : 'red',
+        }];
+      });
+  },
 });  
