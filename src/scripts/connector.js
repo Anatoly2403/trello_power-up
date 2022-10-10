@@ -4,6 +4,7 @@ window.TrelloPowerUp.initialize({
       text: 'timer',
       callback: function (t) {
         return t.popup({
+          icon: '../assets/icons/timer.svg',
           title: "Timer",
           url: '../components/timer/timer.html',
         });
