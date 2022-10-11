@@ -19,5 +19,8 @@ window.TrelloPowerUp.initialize({
   },
   'card-back-section': function (t, options) {
     console.log(123)
+    return {
+      text: 'some text'
+    }
   }
 });  
