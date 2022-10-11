@@ -12,11 +12,25 @@ window.TrelloPowerUp.initialize({
     }];
   },
   'card-badges': function (t, opts) {
-    console.log(t)
+    console.log(opts)
     console.log(t.getContext())
     return [{
       text: 'No Estimate!',
       color: 'blue',
     }];
   },
+  'card-back-section': function (t, options) {
+    return {
+      title: 'My Card Back Section',
+      content: {
+        type: 'iframe',
+        url: t.signUrl('./components/section/section.html'),
+        height: 230,
+      },
+      action: {
+        text: 'My Action',
+        callback: (t) => console.log(123123),
+      }
+    };
+  }
 });  

@@ -1,3 +1,5 @@
+import { addZero } from '../../utils';
+
 document.addEventListener('DOMContentLoaded', () => {
   const start = document.querySelector('.timer__button');
   const counter = document.querySelector('.timer__counter');
@@ -15,12 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateCounter(hour, min, sec);
 
-
-  function addZero(num) {
-    return (num < 10) ? `0${num}` : `${num}`
-  }
-
-  start.addEventListener('click', () => {    
+  start.addEventListener('click', () => {
     startTimer();
   });
 
@@ -44,6 +41,5 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCounter(hour, min, sec);
       }, 1000);
     }
-
   }
 })
