@@ -20,17 +20,8 @@ window.TrelloPowerUp.initialize({
     }];
   },
   'card-back-section': function (t, options) {
-    return [{
+    return {
       title: 'My Card Back Section',
-      content: {
-        type: 'iframe',
-        url: t.signUrl('./components/section/section.html'),
-        height: 230,
-      },
-      action: {
-        text: 'My Action',
-        callback: (t) => console.log(123123),
-      }
-    }];
+    };
   }
 });  
